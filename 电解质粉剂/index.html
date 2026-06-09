@@ -60,19 +60,43 @@
   .notes ul { padding-left: 20px; }
   .notes li { font-size: 13px; color: #78350f; margin-bottom: 6px; }
 
-  .footer { text-align: center; color: #9ca3af; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+  /* Sticky Nav */
+  .top-nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid #e5e7eb; padding: 0 24px; }
+  .top-nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 4px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; -ms-overflow-style: none; }
+  .top-nav-inner::-webkit-scrollbar { display: none; }
+  .top-nav a { display: inline-block; padding: 12px 14px; font-size: 13.5px; font-weight: 500; color: #6b7280; text-decoration: none; border-bottom: 2px solid transparent; transition: color .2s, border-color .2s; flex-shrink: 0; }
+  .top-nav a:hover { color: #e74c3c; border-bottom-color: #e74c3c; }
+  .top-nav a.active { color: #e74c3c; border-bottom-color: #e74c3c; font-weight: 600; }
+  html { scroll-behavior: smooth; }
+  body { padding-top: 0; }
 
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
 
 </style>
 </head>
 <body>
+
+<!-- 顶部导航栏 -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <a href="#overview">概览</a>
+    <a href="#domestic">国内品牌</a>
+    <a href="#international">国际品牌</a>
+    <a href="#b2b">B2B/代工</a>
+    <a href="#newcomers">新入局品牌</a>
+    <a href="#platforms">销售平台</a>
+    <a href="#pricing">价格对比</a>
+    <a href="#notes">说明备注</a>
+  </div>
+</nav>
+
 <div class="container">
 
 <h1>全网电解质粉剂产品梳理报告</h1>
 <p class="subtitle">数据整理时间：2026年6月9日 | 覆盖国内外主流电商平台</p>
 
 <!-- 概览卡片 -->
-<div class="summary-row">
+<div class="summary-row" id="overview">
   <div class="summary-card">
     <div class="num">30+</div>
     <div class="label">涉及品牌数</div>
@@ -92,7 +116,7 @@
 </div>
 
 <!-- 一、国内品牌 -->
-<h2 class="section-title">一、国内品牌电解质粉剂</h2>
+<h2 class="section-title" id="domestic">一、国内品牌电解质粉剂</h2>
 <p class="section-desc">中国本土品牌或在中国有官方旗舰店的品牌，粉剂/冲剂类产品</p>
 <div class="table-wrap">
 <table>
@@ -256,7 +280,7 @@
 </div>
 
 <!-- 二、国际品牌 -->
-<h2 class="section-title">二、国际品牌电解质粉剂（跨境电商/代购）</h2>
+<h2 class="section-title" id="international">二、国际品牌电解质粉剂（跨境电商/代购）</h2>
 <p class="section-desc">主要通过天猫国际、淘宝代购、京东国际等跨境渠道进入中国市场的海外品牌</p>
 <div class="table-wrap">
 <table>
@@ -364,7 +388,7 @@
 </div>
 
 <!-- 三、B2B/代工品牌 -->
-<h2 class="section-title">三、B2B/代工/批发品牌</h2>
+<h2 class="section-title" id="b2b">三、B2B/代工/批发品牌</h2>
 <p class="section-desc">主要在1688、百度爱采购等B2B平台批量销售，面向经销商和OEM客户</p>
 <div class="table-wrap">
 <table>
@@ -430,7 +454,7 @@
 </div>
 
 <!-- 四、2026年新入局品牌 -->
-<h2 class="section-title">四、2026年新入局/延伸品牌（电解质粉/冲剂方向）</h2>
+<h2 class="section-title" id="newcomers">四、2026年新入局/延伸品牌（电解质粉/冲剂方向）</h2>
 <p class="section-desc">2026年以来集中入局电解质赛道的新品牌或新品，部分已有粉剂产品或在筹备中</p>
 <div class="table-wrap">
 <table>
@@ -514,7 +538,7 @@
 </div>
 
 <!-- 五、销售平台 -->
-<h2 class="section-title">五、主要销售平台及特点</h2>
+<h2 class="section-title" id="platforms">五、主要销售平台及特点</h2>
 <div class="platform-grid">
   <div class="platform-card">
     <h3>🛒 京东</h3>
@@ -549,7 +573,7 @@
 </div>
 
 <!-- 六、价格对比 -->
-<h2 class="section-title">六、价格区间对比（折算每瓶/每份）</h2>
+<h2 class="section-title" id="pricing">六、价格区间对比（折算每瓶/每份）</h2>
 <div class="table-wrap">
 <table>
 <thead>
@@ -590,7 +614,7 @@
 </div>
 
 <!-- 备注 -->
-<div class="notes">
+<div class="notes" id="notes">
   <h3>📌 说明与备注</h3>
   <ul>
     <li>以上价格为2026年6月各平台公开售价，促销期间可能有较大浮动，仅供参考</li>
@@ -608,5 +632,28 @@
 </div>
 
 </div>
+
+<script>
+// 导航栏滚动高亮
+const navLinks = document.querySelectorAll('.top-nav a');
+const sections = ['overview','domestic','international','b2b','newcomers','platforms','pricing','notes'];
+
+function onScroll() {
+  let current = '';
+  for (const id of sections) {
+    const el = document.getElementById(id);
+    if (el) {
+      const rect = el.getBoundingClientRect();
+      if (rect.top <= 80) current = id;
+    }
+  }
+  navLinks.forEach(link => {
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+  });
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+</script>
+
 </body>
 </html>
