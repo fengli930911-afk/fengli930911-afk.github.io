@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全网电解质粉剂产品梳理报告</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif; background: #f5f7fa; color: #1a1a2e; line-height: 1.7; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+  h1 { font-size: 28px; font-weight: 700; text-align: center; margin-bottom: 8px; color: #1a1a2e; }
+  .subtitle { text-align: center; color: #6b7280; font-size: 14px; margin-bottom: 32px; }
+  .section-title { font-size: 20px; font-weight: 700; margin: 36px 0 16px 0; padding-left: 12px; border-left: 4px solid #e74c3c; color: #1a1a2e; }
+  .section-desc { color: #6b7280; font-size: 14px; margin-bottom: 16px; }
+
+  /* Summary Cards */
+  .summary-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+  .summary-card { background: #fff; border-radius: 12px; padding: 20px; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .summary-card .num { font-size: 32px; font-weight: 800; color: #e74c3c; }
+  .summary-card .label { font-size: 13px; color: #6b7280; margin-top: 4px; }
+
+  /* Tables */
+  .table-wrap { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,0.06); margin-bottom: 24px; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  thead { background: #f8f9fb; }
+  th { padding: 12px 14px; text-align: left; font-weight: 600; color: #374151; border-bottom: 2px solid #e5e7eb; font-size: 13px; white-space: nowrap; }
+  td { padding: 11px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbfc; }
+  .brand-cell { font-weight: 600; color: #1a1a2e; white-space: nowrap; }
+
+
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; margin: 1px 2px; white-space: nowrap; }
+  .tag-jd { background: #fef2f2; color: #dc2626; }
+  .tag-tb { background: #fff7ed; color: #ea580c; }
+  .tag-pdd { background: #fefce8; color: #ca8a04; }
+  .tag-dy { background: #f0fdf4; color: #16a34a; }
+  .tag-tmgj { background: #eff6ff; color: #2563eb; }
+  .tag-1688 { background: #faf5ff; color: #7c3aed; }
+  .tag-smzdm { background: #fdf2f8; color: #be185d; }
+  .tag-xhs { background: #fff1f2; color: #e11d48; }
+  .tag-kl { background: #ecfeff; color: #0891b2; }
+  .tag-other { background: #f3f4f6; color: #6b7280; }
+  .type-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .type-domestic { background: #dbeafe; color: #1d4ed8; }
+  .type-imported { background: #fce7f3; color: #be185d; }
+  .type-b2b { background: #e0e7ff; color: #4338ca; }
+  .type-new { background: #fef3c7; color: #92400e; }
+
+  /* Platform section */
+  .platform-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  .platform-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .platform-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 10px; color: #1a1a2e; }
+  .platform-card p { font-size: 13px; color: #6b7280; margin-bottom: 6px; }
+  .platform-card .brands { font-size: 12.5px; color: #374151; }
+
+  /* Notes */
+  .notes { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: 20px; margin-top: 32px; }
+  .notes h3 { font-size: 15px; font-weight: 700; color: #92400e; margin-bottom: 10px; }
+  .notes ul { padding-left: 20px; }
+  .notes li { font-size: 13px; color: #78350f; margin-bottom: 6px; }
+
+  .footer { text-align: center; color: #9ca3af; font-size: 12px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; }
+
+  .new-badge { display: inline-block; background: #dc2626; color: #fff; font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-left: 4px; vertical-align: middle; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>全网电解质粉剂产品梳理报告</h1>
+<p class="subtitle">数据整理时间：2026年6月9日 | 覆盖国内外主流电商平台 | V2.0 增补版</p>
+
+<!-- 概览卡片 -->
+<div class="summary-row">
+  <div class="summary-card">
+    <div class="num">30+</div>
+    <div class="label">涉及品牌数</div>
+  </div>
+  <div class="summary-card">
+    <div class="num">9</div>
+    <div class="label">销售平台</div>
+  </div>
+  <div class="summary-card">
+    <div class="num">4</div>
+    <div class="label">品牌类型</div>
+  </div>
+  <div class="summary-card">
+    <div class="num">50+</div>
+    <div class="label">粉剂SKU</div>
+  </div>
+</div>
+
+<!-- 一、国内品牌 -->
+<h2 class="section-title">一、国内品牌电解质粉剂</h2>
+<p class="section-desc">中国本土品牌或在中国有官方旗舰店的品牌，粉剂/冲剂类产品</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>品牌</th>
+  <th>代表产品</th>
+  <th>规格/剂型</th>
+  <th>核心卖点</th>
+  <th>参考价格区间</th>
+  <th>销售平台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="brand-cell">宝矿力水特<br><span class="type-tag type-imported">日资</span></td>
+  <td>POCARI SWEAT 电解质粉末冲剂</td>
+  <td>13g×8袋/盒<br>74g罐装</td>
+  <td>等渗配方，日系经典，接近人体体液渗透压</td>
+  <td>¥35-68/盒</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-pdd">拼多多</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">康比特 CPT</td>
+  <td>润力饮电解质冲剂<br>益生菌电解质冲剂<br>充能核糖电解质粉</td>
+  <td>30g×10袋<br>14袋×6盒<br>400g桶装</td>
+  <td>专业运动营养品牌，含低聚麦芽糖+大豆肽，0蔗糖0脂，益生菌系列新品</td>
+  <td>¥29-129</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">外星人<br>Alienergy</td>
+  <td>外星人电解质粉冲剂<br>外星人倍燃版（含BCAA）</td>
+  <td>15g×8袋/盒<br>18g×10袋/盒</td>
+  <td>元气森林旗下，市占率近50%，大众版+专业版双线并行</td>
+  <td>¥30-55</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span><span class="tag tag-xhs">小红书</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">诺特兰德</td>
+  <td>诺特兰德电解质粉<br>诺特兰德多维电解质冲剂</td>
+  <td>7袋/盒、10袋/盒<br>15条×3盒</td>
+  <td>性价比极高（约1-1.5元/份），京东销量TOP1，口味多样（柠檬/甜橙/荔枝/苹果/百香果）</td>
+  <td>¥15-40</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">迈胜</td>
+  <td>迈胜电解质粉运动冲剂</td>
+  <td>袋装便携装</td>
+  <td>运动耐力型，添加金桔浓缩汁，偏酸甜口味</td>
+  <td>¥30-60</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">水力速<br>WATERPLUS</td>
+  <td>专业标准版<br>无糖版</td>
+  <td>16袋/盒</td>
+  <td>电解质含量高，热量适中，性价比突出（约1.7-2.6元/瓶）</td>
+  <td>¥32-50</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Keep <span class="new-badge">增补</span></td>
+  <td>Keep等渗电解质粉<br>Keep无糖多维电解质粉</td>
+  <td>9.5g×10条/盒<br>5g×15条×3盒<br>95g×3盒</td>
+  <td>健身App生态品牌，等渗配方+无糖版双线，青柠/荔枝/西柚多口味</td>
+  <td>¥55-80</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">动能加 <span class="new-badge">增补</span></td>
+  <td>动能加电解质运动营养粉<br>动能加电解质冲剂（无糖版）</td>
+  <td>3g×7袋/盒<br>3g×21袋（3盒）</td>
+  <td>含钠钾镁锌硒+牛磺酸+多种维生素，分冲级者/耐力/爆发型系列</td>
+  <td>¥20-50</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">优力狮</td>
+  <td>优力狮含肽BCAA电解质粉<br>优力狮0糖0脂恢复营养粉</td>
+  <td>6袋/盒、12袋/盒<br>60袋装</td>
+  <td>含大豆肽+BCAA，专业恢复型；0糖0脂版海盐荔枝味；6种电解质+6种维生素+100mg牛磺酸</td>
+  <td>¥20-80</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">沁力加</td>
+  <td>普通款、纤维+、<br>复合植物肽、缓释碳水+</td>
+  <td>条袋装</td>
+  <td>标示无糖，多系列细分化（纤维/植物肽/缓释碳水）</td>
+  <td>¥25-55</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">膳动力</td>
+  <td>电解质粉（4g装/3g装）</td>
+  <td>4g/条、3g/条</td>
+  <td>小规格便携，数据均衡，按口味选择即可</td>
+  <td>¥20-45</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">东鹏特饮<br>（补水啦系列）</td>
+  <td>东鹏补水啦电解质粉</td>
+  <td>袋装冲剂</td>
+  <td>瓶装爆款延伸，抖音/天猫电解质水销量领先，下沉市场渠道强</td>
+  <td>¥25-50</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">健力宝</td>
+  <td>健力宝电解质冲剂粉</td>
+  <td>袋装/条装</td>
+  <td>中国首款含电解质运动饮料，"中国魔水"经典品牌</td>
+  <td>¥20-45</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">佳得乐<br>Gatorade</td>
+  <td>佳得乐电解质粉/冲剂</td>
+  <td>罐装/条装</td>
+  <td>百事旗下全球运动饮料龙头，6%碳水配方快速吸收，专业运动标杆</td>
+  <td>¥35-70</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-tmgj">天猫国际</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">POWERADE<br>爆锐</td>
+  <td>爆锐电解质粉冲剂</td>
+  <td>条袋装</td>
+  <td>可口可乐旗下，2026年新入局电解质赛道，电解质含量≥90mg/100ml</td>
+  <td>¥30-60</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">北京同仁堂 <span class="new-badge">增补</span></td>
+  <td>同仁堂葡萄糖电解质粉</td>
+  <td>8g×30条/盒（240g）</td>
+  <td>老字号药企背书，葡萄糖+电解质组合，主打高反/暴汗/体虚场景，抖音有官方旗舰店</td>
+  <td>¥29-90</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span><span class="tag tag-pdd">拼多多</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">菲诺 <span class="new-badge">增补</span></td>
+  <td>菲诺椰子水电解质粉</td>
+  <td>条袋装</td>
+  <td>椰子水+电解质组合，主打日常补水+熬夜+运动三场景</td>
+  <td>¥30-60</td>
+  <td><span class="tag tag-tb">淘宝/天猫</span><span class="tag tag-dy">抖音</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">脉动 <span class="new-badge">增补</span></td>
+  <td>脉动电解质冲剂粉</td>
+  <td>条袋装</td>
+  <td>达能旗下，2026年升级配方入局，猫薄荷限定款主打年轻养猫人群</td>
+  <td>¥25-50</td>
+  <td><span class="tag tag-jd">京东</span><span class="tag tag-tb">淘宝/天猫</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 二、国际品牌 -->
+<h2 class="section-title">二、国际品牌电解质粉剂（跨境电商/代购）</h2>
+<p class="section-desc">主要通过天猫国际、淘宝代购、京东国际等跨境渠道进入中国市场的海外品牌</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>品牌</th>
+  <th>国家/归属</th>
+  <th>代表产品</th>
+  <th>核心卖点</th>
+  <th>参考价格</th>
+  <th>销售渠道</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="brand-cell">Liquid I.V.<br><span class="type-tag type-imported">进口</span></td>
+  <td>美国/联合利华</td>
+  <td>Hydration Multiplier<br>Sugar-Free 无糖版</td>
+  <td>CTT细胞传输技术，20种口味，无糖版适合控糖人群</td>
+  <td>¥60-120/盒</td>
+  <td><span class="tag tag-tb">淘宝</span><span class="tag tag-jd">京东</span><span class="tag tag-tmgj">天猫国际</span><span class="tag tag-kl">考拉</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Nuun</td>
+  <td>美国</td>
+  <td>Nuun Sport 电解质泡腾片<br>Nuun Immunity</td>
+  <td>泡腾片形态，便携易用，运动与免疫双系列</td>
+  <td>¥50-100/管</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-tmgj">天猫国际</span><span class="tag tag-kl">考拉</span><span class="tag tag-xhs">小红书</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">LMNT</td>
+  <td>美国</td>
+  <td>LMNT 电解质粉</td>
+  <td>生酮友好，无糖高钠配方，主打1000mg钠/袋</td>
+  <td>¥80-150/盒</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-xhs">小红书</span><span class="tag tag-smzdm">什么值得买</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Skratch Labs</td>
+  <td>美国</td>
+  <td>Sport Hydration Drink Mix</td>
+  <td>天然成分，真水果口味，专业骑行/耐力运动圈口碑好</td>
+  <td>¥80-160</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-tmgj">天猫国际</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">SaltStick</td>
+  <td>美国</td>
+  <td>SaltStick 电解质胶囊/粉</td>
+  <td>胶囊形态为主，耐力运动/铁三领域专业品牌</td>
+  <td>¥60-130</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-smzdm">什么值得买</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Tailwind Nutrition</td>
+  <td>美国</td>
+  <td>Tailwind 电解质能量粉</td>
+  <td>能量+电解质二合一，超马/长距离耐力运动首选</td>
+  <td>¥70-140</td>
+  <td><span class="tag tag-tb">淘宝代购</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Veloforte</td>
+  <td>英国</td>
+  <td>Veloforte 电解质粉</td>
+  <td>天然原料，植物基，欧洲运动营养新锐</td>
+  <td>¥90-160</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-tmgj">天猫国际</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">Pedialyte</td>
+  <td>美国/雅培</td>
+  <td>Pedialyte 电解质粉</td>
+  <td>医学级补水，最初面向婴幼儿/腹泻恢复，现也覆盖成人运动场景</td>
+  <td>¥50-110</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-tmgj">天猫国际</span><span class="tag tag-kl">考拉</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">SOS Hydration</td>
+  <td>英国</td>
+  <td>SOS 电解质粉</td>
+  <td>等渗补水，临床配方参考WHO口服补液盐标准</td>
+  <td>¥60-120</td>
+  <td><span class="tag tag-tb">淘宝代购</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">GU Energy Labs <span class="new-badge">增补</span></td>
+  <td>美国</td>
+  <td>GU Hydration Drink Mix<br>GU Electrolyte Brew</td>
+  <td>耐力运动领域标杆，能量胶+电解质粉双线，骑行/跑步圈认知度高</td>
+  <td>¥70-130</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-xhs">小红书</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">SIS (Science In Sport) <span class="new-badge">增补</span></td>
+  <td>英国</td>
+  <td>SIS GO Electrolyte<br>SIS GO Hydro</td>
+  <td>英系专业运动营养品牌，环法车队合作品牌，含碳水/无糖双版本</td>
+  <td>¥60-130</td>
+  <td><span class="tag tag-tb">淘宝代购</span><span class="tag tag-tmgj">天猫国际</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 三、B2B/代工品牌 -->
+<h2 class="section-title">三、B2B/代工/批发品牌</h2>
+<p class="section-desc">主要在1688、百度爱采购等B2B平台批量销售，面向经销商和OEM客户</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>品牌</th>
+  <th>代表产品</th>
+  <th>核心特点</th>
+  <th>主要平台</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="brand-cell">庆葆堂</td>
+  <td>电解质粉剂OEM/ODM</td>
+  <td>代工为主，支持定制</td>
+  <td><span class="tag tag-1688">1688</span><span class="tag tag-other">百度爱采购</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">百芝兰</td>
+  <td>电解质冲剂粉</td>
+  <td>批发/起批量低</td>
+  <td><span class="tag tag-1688">1688</span><span class="tag tag-other">百度爱采购</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">中鲁海源</td>
+  <td>电解质固体饮料</td>
+  <td>运动营养方向</td>
+  <td><span class="tag tag-1688">1688</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">康元星</td>
+  <td>电解质冲剂</td>
+  <td>功能性固体饮料</td>
+  <td><span class="tag tag-1688">1688</span><span class="tag tag-other">百度爱采购</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">麒恒</td>
+  <td>电解质粉剂</td>
+  <td>保健品/固体饮料</td>
+  <td><span class="tag tag-1688">1688</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">喜芝堂</td>
+  <td>电解质冲剂（含维生素C）</td>
+  <td>运动营养源头厂家，支持OEM，起批500袋</td>
+  <td><span class="tag tag-1688">1688</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">新阳营养 <span class="new-badge">增补</span></td>
+  <td>电解质维生素果味固体饮料（跨境亚马逊/TK爆品代工）</td>
+  <td>广州源头工厂，OEM/ODM，12种口味可选，315g罐装</td>
+  <td><span class="tag tag-1688">1688</span><span class="tag tag-other">阿里巴巴国际站</span></td>
+</tr>
+<tr>
+  <td class="brand-cell">百未草 <span class="new-badge">增补</span></td>
+  <td>电解质浓缩液/粉 OEM贴牌代工</td>
+  <td>特膳制剂/运动营养食品代工，多剂型（粉剂/颗粒/片剂）</td>
+  <td><span class="tag tag-1688">1688</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 四、2026年新入局品牌 -->
+<h2 class="section-title">四、2026年新入局/延伸品牌（电解质粉/冲剂方向）</h2>
+<p class="section-desc">2026年以来集中入局电解质赛道的新品牌或新品，部分已有粉剂产品或在筹备中</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>品牌</th>
+  <th>背景</th>
+  <th>产品方向</th>
+  <th>差异化卖点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="brand-cell">光合星球</td>
+  <td>新消费品牌</td>
+  <td>儿童电解质水/粉</td>
+  <td>精准锁定儿童补水赛道，回应家长核心顾虑</td>
+</tr>
+<tr>
+  <td class="brand-cell">轻上</td>
+  <td>新消费品牌</td>
+  <td>减脂人群电解质水/粉</td>
+  <td>加入左旋肉碱，减脂+补水场景捆绑</td>
+</tr>
+<tr>
+  <td class="brand-cell">好望水</td>
+  <td>新消费品牌</td>
+  <td>"补水有方"系列电解质+中式养生水</td>
+  <td>加入甘草、人参、茯苓等中式草本，药食同源概念</td>
+</tr>
+<tr>
+  <td class="brand-cell">蒙牛</td>
+  <td>乳业巨头</td>
+  <td>乳钙电解质饮料/粉</td>
+  <td>"电解质+钙"组合，天然乳源钙，试销月超10万瓶</td>
+</tr>
+<tr>
+  <td class="brand-cell">活力李子园</td>
+  <td>老牌乳饮</td>
+  <td>电解质+钙/氨糖</td>
+  <td>专业等渗配方+氨糖创新概念，运动便携手提盖</td>
+</tr>
+<tr>
+  <td class="brand-cell">葡口</td>
+  <td>饮料品牌</td>
+  <td>菁力乳钙蛋白电解质水</td>
+  <td>"电解质+乳钙+蛋白"三合一</td>
+</tr>
+<tr>
+  <td class="brand-cell">农夫山泉</td>
+  <td>饮料龙头</td>
+  <td>维B电解质水/粉（独立新品）</td>
+  <td>添加烟酰胺和维生素B6，西柚味电解质含量超500mg/瓶，定价3.67元</td>
+</tr>
+<tr>
+  <td class="brand-cell">奈雪的茶</td>
+  <td>新茶饮品牌</td>
+  <td>电解质新品</td>
+  <td>茶饮品牌跨界入局，电解质含量40-70mg/100ml区间</td>
+</tr>
+<tr>
+  <td class="brand-cell">菲诺</td>
+  <td>椰子水品牌</td>
+  <td>椰子水+电解质</td>
+  <td>日常补水+熬夜场景+运动恢复三合一</td>
+</tr>
+<tr>
+  <td class="brand-cell">尖叫 <span class="new-badge">增补</span></td>
+  <td>农夫山泉旗下</td>
+  <td>专业运动电解质水/粉</td>
+  <td>20年运动饮料品牌，与农夫山泉新电解质品互补——尖叫主攻专业运动，新品主攻日常补水</td>
+</tr>
+<tr>
+  <td class="brand-cell">统一 <span class="new-badge">增补</span></td>
+  <td>饮料巨头</td>
+  <td>海之言电解质系列延伸</td>
+  <td>传统饮料巨头渠道优势，海之言品牌延伸至电解质赛道</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 五、销售平台 -->
+<h2 class="section-title">五、主要销售平台及特点</h2>
+<div class="platform-grid">
+  <div class="platform-card">
+    <h3>🛒 京东</h3>
+    <p>国内品牌官方旗舰店主阵地，销量排行透明</p>
+    <p class="brands">康比特、迈胜、水力速、宝矿力、外星人、诺特兰德、Keep、佳得乐、动能加、优力狮、同仁堂等均有自营/旗舰店</p>
+  </div>
+  <div class="platform-card">
+    <h3>🏪 淘宝/天猫</h3>
+    <p>品牌最全，覆盖国内+代购国际品牌</p>
+    <p class="brands">几乎所有国内品牌均有售，跨境代购Nuun/LMNT/Skratch/GU/SIS等国际品牌主要渠道</p>
+  </div>
+  <div class="platform-card">
+    <h3>🌍 天猫国际/京东国际</h3>
+    <p>跨境电商，海外品牌官方渠道</p>
+    <p class="brands">Liquid I.V.、Skratch Labs、Veloforte、Pedialyte、SIS等进口品牌官方跨境渠道</p>
+  </div>
+  <div class="platform-card">
+    <h3>🔥 抖音电商</h3>
+    <p>直播带货增长最快，品牌自播+达人带货双驱动</p>
+    <p class="brands">外星人、东鹏、康比特、诺特兰德、水力速、同仁堂、Keep、菲诺等品牌直播销售活跃</p>
+  </div>
+  <div class="platform-card">
+    <h3>💰 拼多多</h3>
+    <p>价格敏感用户为主，部分品牌有百亿补贴</p>
+    <p class="brands">宝矿力、健力宝、东鹏、优力狮、Keep、诺特兰德、同仁堂等，白牌/小品牌较多</p>
+  </div>
+  <div class="platform-card">
+    <h3>📦 1688/爱采购</h3>
+    <p>B2B批发渠道，代工/OEM/小品牌集中</p>
+    <p class="brands">庆葆堂、百芝兰、喜芝堂、康元星、新阳营养、百未草等，支持定制与大批量采购</p>
+  </div>
+</div>
+
+<!-- 六、价格对比 -->
+<h2 class="section-title">六、价格区间对比（折算每瓶/每份）</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+  <th>价格档位</th>
+  <th>折算单瓶价</th>
+  <th>典型品牌</th>
+  <th>适合人群</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="brand-cell">极性价比档</td>
+  <td>¥1-2/瓶</td>
+  <td>诺特兰德、水力速</td>
+  <td>日常训练、高频使用、预算敏感</td>
+</tr>
+<tr>
+  <td class="brand-cell">大众档</td>
+  <td>¥2-4/瓶</td>
+  <td>康比特、迈胜、沁力加、膳动力、健力宝、动能加、优力狮</td>
+  <td>运动爱好者、性价比与品质兼顾</td>
+</tr>
+<tr>
+  <td class="brand-cell">中高端档</td>
+  <td>¥4-7/瓶</td>
+  <td>宝矿力水特、外星人、佳得乐、POWERADE、Keep、同仁堂</td>
+  <td>品牌偏好、口味追求、日常饮用</td>
+</tr>
+<tr>
+  <td class="brand-cell">进口/专业档</td>
+  <td>¥7-15/瓶</td>
+  <td>Liquid I.V.、LMNT、Skratch Labs、Nuun、Veloforte、GU Energy、SIS</td>
+  <td>专业运动员、生酮/特殊饮食、品质优先</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 备注 -->
+<div class="notes">
+  <h3>📌 说明与备注</h3>
+  <ul>
+    <li>以上价格为2026年6月各平台公开售价，促销期间可能有较大浮动，仅供参考</li>
+    <li>部分品牌（如宝矿力水特）推荐冲泡水量仅200ml，折算550ml标准瓶需2-3包粉剂，实际单价偏高</li>
+    <li>国际品牌主要通过淘宝代购、天猫国际、京东国际等跨境渠道购买，价格受汇率和关税影响</li>
+    <li>2026年电解质赛道持续火热，传统饮料巨头（蒙牛、农夫山泉、可口可乐、统一等）纷纷入局，新品迭代快</li>
+    <li>粉剂产品相较于瓶装电解质水普遍更具性价比（约1-3元/份 vs 4-5元/瓶），且更便携</li>
+    <li>电解质饮料市场2025年规模逼近200亿元，同比+32.7%，预计2030年可达500亿+</li>
+    <li><strong>V2.0增补品牌</strong>：Keep、动能加、北京同仁堂、菲诺、脉动、GU Energy、SIS、新阳营养、百未草、尖叫、统一</li>
+    <li>数据来源：知乎测评、什么值得买、京东/淘宝商品页、36氪、腾讯新闻、行业研究报告等</li>
+  </ul>
+</div>
+
+<div class="footer">
+  报告生成时间：2026年6月9日 | V2.0增补版 | 数据来源：公开网络信息整理
+</div>
+
+</div>
+</body>
+</html>
